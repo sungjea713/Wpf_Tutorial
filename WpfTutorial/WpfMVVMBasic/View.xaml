@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfMVVMBasic"
         mc:Ignorable="d"
-        Title="View" Height="450" Width="800">
+        Title="View" Height="393" Width="542">
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
     <Grid>
-        
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="37,21,0,0" TextWrapping="Wrap" Text="{Binding LabelString}" VerticalAlignment="Top"/>
+        <ListView x:Name="listView" ItemsSource="{Binding ListMessageRaiseMethod}" HorizontalAlignment="Left" Height="193" Margin="37,83,0,0" VerticalAlignment="Top" Width="224">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label Content="{Binding}" FontSize="15"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView x:Name="listView2" ItemsSource="{Binding ListMessagNonRaise}" HorizontalAlignment="Left" Height="193" Margin="280,83,0,0" VerticalAlignment="Top" Width="224">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label Content="{Binding}" FontSize="15"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="37,62,0,0" TextWrapping="Wrap" Text="Using List" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="280,62,0,0" TextWrapping="Wrap" Text="Using ObservableList" VerticalAlignment="Top"/>
+        <Button Command="{Binding Click}" x:Name="button" Content="Click" HorizontalAlignment="Left" Margin="37,315,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
