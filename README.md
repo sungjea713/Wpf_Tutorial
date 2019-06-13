@@ -2,7 +2,7 @@
 <h2>WpfButtonUX</h2>
 <ul>
   <li>Button 커스터마이징</li>
-  <li> <ul> ㅁㄴㅇㄹ<li> Mouse Over </li> <li> Mouse Click </li> <li> Blend 작업 </li> </ul> </li>
+  <li> <ul> 커스터마이징 내역 <li> Mouse Over </li> <li> Mouse Click </li> <li> Blend 작업 </li> </ul> </li>
 </ul>
 <h2>WpfHelloCodeHouse</h2>
 <ul>
