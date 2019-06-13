@@ -5,8 +5,192 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfButtonUX"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="286.5" Width="800">
+    <Window.Resources>
+
+        <ControlTemplate x:Key="ButtonLogin" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle x:Name="Main" Margin="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/LOGIN.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Text" Margin="0" Opacity="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/LOGIN_TEXT.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Sel" Margin="0" Fill="#19FFFFFF" Opacity="0"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Fill" TargetName="Sel" Value="#4CFFFFFF"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonMode" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle x:Name="Main" Margin="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/CONCENTRATE.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Text" Margin="0" Opacity="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/CONCENTRATE_TEXT.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Sel" Margin="0" Fill="#19FFFFFF" Opacity="0"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Fill" TargetName="Sel" Value="#4CFFFFFF"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonPause" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle x:Name="Main" Margin="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/PAUSE.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Text" Margin="0" Opacity="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/PAUSE_TEXT.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Sel" Margin="0" Fill="#19FFFFFF" Opacity="0"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Fill" TargetName="Sel" Value="#4CFFFFFF"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonSetting" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle x:Name="Main" Margin="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/SETTING.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Text" Margin="0" Opacity="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/SETTING_TEXT.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Sel" Margin="0" Fill="#19FFFFFF" Opacity="0"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Fill" TargetName="Sel" Value="#4CFFFFFF"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonInfo" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle x:Name="Main" Margin="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/INFO.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Text" Margin="0" Opacity="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/INFO_TEXT.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Sel" Margin="0" Fill="#19FFFFFF" Opacity="0"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Fill" TargetName="Sel" Value="#4CFFFFFF"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonHelp" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle x:Name="Main" Margin="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/HELP.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Text" Margin="0" Opacity="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Images/HELP_TEXT.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Sel" Margin="0" Fill="#19FFFFFF" Opacity="0"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Opacity" TargetName="Main" Value="0"/>
+                    <Setter Property="Opacity" TargetName="Text" Value="1"/>
+                    <Setter Property="Opacity" TargetName="Sel" Value="1"/>
+                    <Setter Property="Fill" TargetName="Sel" Value="#4CFFFFFF"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+    </Window.Resources>
     <Grid>
-        
+        <Rectangle Margin="0,0,0,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/BACKGROUND.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="button" Content="Button" Margin="208.167,105,0,0" Height="75" VerticalAlignment="Top" Template="{DynamicResource ButtonLogin}" HorizontalAlignment="Left" Width="75" d:LayoutOverrides="VerticalAlignment"/>
+        <Button x:Name="button_Copy" Content="Button" Margin="17.667,20.5,0,0" Height="175.5" VerticalAlignment="Top" Template="{DynamicResource ButtonLogin}" HorizontalAlignment="Left" Width="175.5" d:LayoutOverrides="VerticalAlignment"/>
+        <Button x:Name="button_Copy1" Content="Button" Margin="306.167,105,0,0" Height="75" VerticalAlignment="Top" Template="{DynamicResource ButtonMode}" HorizontalAlignment="Left" Width="75" d:LayoutOverrides="VerticalAlignment"/>
+        <Button x:Name="button_Copy2" Content="Button" Margin="0,105,318.833,0" Height="75" VerticalAlignment="Top" Template="{DynamicResource ButtonPause}" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Right" Width="75"/>
+        <Button x:Name="button_Copy3" Content="Button" Margin="0,105,227.833,0" Height="75" VerticalAlignment="Top" Template="{DynamicResource ButtonSetting}" HorizontalAlignment="Right" Width="75" d:LayoutOverrides="VerticalAlignment"/>
+        <Button x:Name="button_Copy4" Content="Button" Margin="0,105,138.833,0" Height="75" VerticalAlignment="Top" Template="{DynamicResource ButtonInfo}" HorizontalAlignment="Right" Width="75" d:LayoutOverrides="VerticalAlignment"/>
+        <Button x:Name="button_Copy5" Content="Button" Margin="0,104.333,53.496,0" Height="75" VerticalAlignment="Top" Template="{DynamicResource ButtonHelp}" HorizontalAlignment="Right" Width="75" d:LayoutOverrides="VerticalAlignment"/>
+
     </Grid>
 </Window>

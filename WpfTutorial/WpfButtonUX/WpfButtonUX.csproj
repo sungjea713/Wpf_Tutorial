@@ -94,5 +94,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BACKGROUND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CONCENTRATE.png" />
+    <Resource Include="Images\CONCENTRATE_TEXT.png" />
+    <Resource Include="Images\HELP.png" />
+    <Resource Include="Images\HELP_TEXT.png" />
+    <Resource Include="Images\INFO.png" />
+    <Resource Include="Images\INFO_TEXT.png" />
+    <Resource Include="Images\LOGIN.png" />
+    <Resource Include="Images\LOGIN_TEXT.png" />
+    <Resource Include="Images\PAUSE.png" />
+    <Resource Include="Images\PAUSE_TEXT.png" />
+    <Resource Include="Images\SETTING.png" />
+    <Resource Include="Images\SETTING_TEXT.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
