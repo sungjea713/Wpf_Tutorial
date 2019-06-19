@@ -23,6 +23,11 @@ namespace WpfFileIO
         public MainWindow()
         {
             InitializeComponent();
+            FileIO fileIO = new FileIO();
+            fileIO.CreateDirectory();
+            fileIO.CreateTextFile("test");
+            fileIO.AddLineInFile("test", "hi1");
+            fileIO.AddLineInFile("test", "hi2");
         }
     }
 }
