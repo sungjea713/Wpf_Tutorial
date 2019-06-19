@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfButtonUX", "WpfButtonUX\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfJSON", "WpfJSON\WpfJSON.csproj", "{51AF32AB-6428-447B-9A8B-5EC478FD152E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfFileIO", "WpfFileIO\WpfFileIO.csproj", "{3C942DE0-588E-49A2-AC0C-2EA1DAF9109A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{51AF32AB-6428-447B-9A8B-5EC478FD152E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51AF32AB-6428-447B-9A8B-5EC478FD152E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51AF32AB-6428-447B-9A8B-5EC478FD152E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C942DE0-588E-49A2-AC0C-2EA1DAF9109A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C942DE0-588E-49A2-AC0C-2EA1DAF9109A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C942DE0-588E-49A2-AC0C-2EA1DAF9109A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C942DE0-588E-49A2-AC0C-2EA1DAF9109A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
