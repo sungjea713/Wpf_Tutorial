@@ -23,6 +23,9 @@ namespace WpfTime
         public MainWindow()
         {
             InitializeComponent();
+            TimeSpan currentTime = DateTime.Now.TimeOfDay;
+            TimeSpan customTime = new TimeSpan(10, 5, 10);
+            string strCurrentTime = currentTime.ToString(@"hh\:mm\:ss");
         }
     }
 }
