@@ -1,4 +1,11 @@
 # WpfTutorial
+<h2>Blink Element</h2>
+<ul>
+  <li>Text Block Blink 효과</li>
+  <li>Onloaded Event 처리기 생성</li>
+  <li>Storyboard 추가</li>
+  <li>RepeatBehavior="Forever"속성 변경</li>
+</ul>
 <h2>WpfFileIO</h2>
 <ul>
   <li>Directory 생성</li>
