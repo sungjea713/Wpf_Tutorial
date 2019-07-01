@@ -14,6 +14,7 @@
   <li>Text 파일 읽기</li>
   <li>Text 파일 쓰기</li>
   <li>파일 읽기 쓰기 with thread safe(작업중)</li>
+  <li>JSON Serialize, Deserialize</li>
 </ul>
 <h2>WpfButtonUX</h2>
 <ul>
