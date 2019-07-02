@@ -31,6 +31,7 @@
   <li>ListView - ObservableCollection<string> 프로퍼티 바인딩</li>
   <li>ListView - List<string> 프로퍼티 바인딩</li>
   <li>Button - Command 바인딩</li>
+  <li>ViewModelFrame - ViewModel 작성법 example </li>
 </ul>
 <h2>WpfTutorial</h2>
 <ul>
