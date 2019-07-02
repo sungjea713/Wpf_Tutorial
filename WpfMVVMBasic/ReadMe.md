@@ -16,7 +16,7 @@ using System.Threading;
         #endregion
 
         #region constructor
-        public ViewModelFrame()
+        public ViewModelFrame() //생성자 부분, 클래스 이름에 맞게 변경
         {
 
         }
