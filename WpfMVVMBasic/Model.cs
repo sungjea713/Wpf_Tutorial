@@ -10,7 +10,6 @@ namespace WpfMVVMBasic
 {
     class Model : ObservableObject
     {
-
         private string bindingMessage;
 
         public string BindingMessage { get { return bindingMessage; } set { bindingMessage = value; RaisePropertyChanged("BindingMessage"); } }
@@ -26,6 +25,5 @@ namespace WpfMVVMBasic
                 ListMessage.Add(string.Format("[{0}] List binding is done", i));
             }
         }
-
     }
 }

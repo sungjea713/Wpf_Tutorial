@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using WpfMVVMBasic.MVVM;
+using WpfMVVMBasic.MVVM; // for ObservableObject
 using System.Windows.Input; //for ICommand
 using System.Collections.ObjectModel; //for ObservableCollection
 using System.Windows;
 using System.Diagnostics;
 using System.Threading;
 
-namespace WpfMVVMBasic
+namespace WpfMVVMBasic.ViewModel
 {
     class ViewModelFrame : ObservableObject
     {
@@ -30,7 +30,7 @@ namespace WpfMVVMBasic
         public ICommand Operation { get { return new RelayCommand(OperationExcute); } }
         void OperationExcute()
         {
-            
+
         }
         #endregion
 
