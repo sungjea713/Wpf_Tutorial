@@ -1,5 +1,5 @@
 # WpfTutorial
-<h2>Blink Element</h2>
+<h2>Blink Element(Blend)</h2>
 <ul>
   <li>Text Block Blink 효과</li>
   <li>Onloaded Event 처리기 생성</li>
@@ -16,7 +16,7 @@
   <li>파일 읽기 쓰기 with thread safe(작업중)</li>
   <li>JSON Serialize, Deserialize</li>
 </ul>
-<h2>WpfButtonUX</h2>
+<h2>WpfButtonUX(Blend)</h2>
 <ul>
   <li>Button 커스터마이징</li>
   <li> <ul> 커스터마이징 내역 <li> Mouse Over </li> <li> Mouse Click </li> <li> Blend 작업 </li> </ul> </li>
