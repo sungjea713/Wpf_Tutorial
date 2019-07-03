@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfMVVMBasic.Window
+namespace WpfMVVMBasic.Windows
 {
     /// <summary>
     /// Interaction logic for WindowExample.xaml

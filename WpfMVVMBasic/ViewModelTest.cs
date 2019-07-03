@@ -7,7 +7,7 @@ using System.Windows;
 
 namespace WpfMVVMBasic
 {
-    public class ViewModel : ObservableObject
+    public class ViewModelTest : ObservableObject
     {
         #region member
         Model model = new Model();
@@ -23,7 +23,7 @@ namespace WpfMVVMBasic
         #endregion
 
         #region Constructor
-        public ViewModel()
+        public ViewModelTest()
         {
             foreach(string str in ListMessageRaiseMethod) ListMessagNonRaise.Add(str);
    

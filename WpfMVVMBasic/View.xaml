@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="View" Height="393" Width="542">
     <Window.DataContext>
-        <local:ViewModel />
+        <local:ViewModelTest />
     </Window.DataContext>
     <Grid>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="37,21,0,0" TextWrapping="Wrap" Text="{Binding LabelString}" VerticalAlignment="Top"/>

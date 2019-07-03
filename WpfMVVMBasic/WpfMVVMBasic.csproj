@@ -64,17 +64,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ViewModel.cs" />
+    <Compile Include="ViewModelTest.cs" />
     <Compile Include="ViewModel\ViewModelExample.cs" />
     <Compile Include="ViewModel\ViewModelFrame.cs" />
-    <Compile Include="Window\WindowExample.xaml.cs">
+    <Compile Include="Windows\WindowExample.xaml.cs">
       <DependentUpon>WindowExample.xaml</DependentUpon>
     </Compile>
     <Page Include="View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window\WindowExample.xaml">
+    <Page Include="Windows\WindowExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
