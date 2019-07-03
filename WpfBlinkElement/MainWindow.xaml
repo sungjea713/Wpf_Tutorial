@@ -22,7 +22,7 @@
         </EventTrigger>
     </Window.Triggers>
     <Grid>
-        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Blink Text" Margin="124.601,130.876,100.206,145.77" FontFamily="Roboto Light" FontSize="120"/>
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Blink Text" Margin="130,130,130,130" FontFamily="Roboto Light" FontSize="120"/>
 
     </Grid>
 </Window>
