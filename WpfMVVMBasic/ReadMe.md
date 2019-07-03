@@ -34,4 +34,4 @@ using System.Threading;
         #endregion
 ```
 
-![XamlVMLink](./Screenshot/XamlVMLink.png){: width=50% height=50%}
+![XamlVMLink](./Screenshot/XamlVMLink.png)
