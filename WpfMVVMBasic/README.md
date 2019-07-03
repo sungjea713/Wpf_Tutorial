@@ -36,4 +36,18 @@ using System.Threading;
 ```
 
 <h3>Window(View) Xaml</h3>
-![XamlVMLink](./Screenshot/XamlAdd.png)
+<pr>Xmal 네임스페이스 링크 추가</pr>
+
+```C#
+xmlns:vm="clr-namespace:WpfMVVMBasic.ViewModel"
+```
+
+<pr> Data Context 연결 </pr>
+
+```C#
+    <Window.DataContext>
+        <vm:ViewModelExample/>
+    </Window.DataContext>
+```
+
+![XamlAdd](./Screenshot/XamlAdd.png)
