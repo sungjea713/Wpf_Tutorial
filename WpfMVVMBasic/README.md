@@ -35,4 +35,5 @@ using System.Threading;
         #endregion
 ```
 
-![XamlVMLink](./Screenshot/XamlVMLink.png)
+<h3>Window(View) Xaml</h3>
+![XamlVMLink](./Screenshot/XamlAdd.png)
