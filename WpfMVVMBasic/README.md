@@ -1,6 +1,7 @@
 <h2>Binding 순서</h2>
-
+<h3>ViewModel</h3>
 <pr>전처리 추가</pr>
+
 ```C#
 using WpfMVVMBasic.MVVM; //for ObservableObject
 using System.Windows.Input; //for ICommand 
@@ -33,3 +34,5 @@ using System.Threading;
         #region method
         #endregion
 ```
+
+![XamlVMLink](./Screenshot/XamlVMLink.png)
