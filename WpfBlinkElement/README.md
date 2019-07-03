@@ -2,7 +2,7 @@
 <h3>Window(View) Xaml</h3>
 <pr>Textblock 추가</pr>
 
-![CreatTextBlock](./Screenshot/CreatTextBlock.png)
+![CreatTextBlock](https://github.com/sungjea713/WpfTutorial/blob/master/WpfBlinkElement/Screenshot/CreateTextblock.png)
 
 <pr></pr>
 <h3>Blend</h3>
