@@ -107,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Font\" />
+    <Folder Include="Screenshot\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image\RED_WINE.png" />
