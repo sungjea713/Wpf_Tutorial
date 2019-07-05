@@ -26,6 +26,10 @@ namespace WpfMVVMBasic.ViewModel
         }
         #endregion
 
+        #region properties
+        
+        #endregion
+        
         #region command
         public ICommand Operation { get { return new RelayCommand(OperationExcute); } }
         void OperationExcute()
