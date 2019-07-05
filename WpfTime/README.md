@@ -1,0 +1,1 @@
+![ElapsedTime](./Screenshot/ElapsedTime.gif)
