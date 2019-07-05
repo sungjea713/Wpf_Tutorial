@@ -1,5 +1,10 @@
 # WpfTutorial
-<h2>Blink Element(Blend)</h2>
+<h2>WpfTime(Blend)</h2>
+<ul>
+  <li>Timespan, DateTime.Now.TimeOfDay 활용</li>
+  <li>Thread 활용하여 Timer 구성(string 바인딩)</li>
+</ul>
+<h2>WpfBlinkElement(Blend)</h2>
 <ul>
   <li>Text Block Blink 효과</li>
   <li>Onloaded Event 처리기 생성</li>
