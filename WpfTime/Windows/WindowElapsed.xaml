@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfTime.Windows.WindowElapsed"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTime.Windows"
+        xmlns:vm="clr-namespace:WpfTime.ViewModel"
+        mc:Ignorable="d"
+        Title="WindowElapsed" Height="243.334" Width="384">
+    <Window.DataContext>
+        <vm:ViewModelElapsed/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/WpfTime;component/Image/RED_WINE.png"/>
+        </Grid.Background>
+        <Rectangle HorizontalAlignment="Left" Height="60.957" Margin="52.916,20.083,0,0" VerticalAlignment="Top" Width="60.956" d:LayoutOverrides="HorizontalAlignment">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/WpfTime;component/Image/CLOCK.png" Stretch="Uniform"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="textBlock" Height="36.666" Margin="118.23,44.374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Roboto Light" Foreground="#FFCDCDCD" FontSize="30" HorizontalAlignment="Left" Width="251.333" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.332"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.643"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run Text="Elapsed T"/><Run Text="i"/><Run Text="me"/></TextBlock>
+        <TextBlock x:Name="textTime" Margin="14.667,85.562,0,0" TextWrapping="Wrap" FontFamily="DS-DIGITAL" Foreground="#FF1BBFA1" FontSize="100" FontStyle="Italic" Height="108.666" VerticalAlignment="Top" HorizontalAlignment="Left" Width="346.667" Text="{Binding Time}" ></TextBlock>
+
+    </Grid>
+</Window>

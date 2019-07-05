@@ -55,6 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MVVM\ObervableObject.cs" />
+    <Compile Include="MVVM\PropertySupport.cs" />
+    <Compile Include="MVVM\RelayCommand.cs" />
+    <Compile Include="ViewModel\ViewModelElapsed.cs" />
+    <Compile Include="Windows\WindowElapsed.xaml.cs">
+      <DependentUpon>WindowElapsed.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +74,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\WindowElapsed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +104,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Font\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\RED_WINE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\CLOCK.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
