@@ -1,4 +1,8 @@
 # WpfTutorial
+<h2>WpfFrame</h2>
+<ul>
+  <li>Frame, Page 이용하여 Page 간 페이지 이동</li>
+</ul>
 <h2>WpfTime(Blend)</h2>
 <ul>
   <li>Timespan, DateTime.Now.TimeOfDay 활용</li>
